@@ -14,8 +14,15 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    Click on the user to chat.
                 </div>
+                <ul>
+                    @if (iterator_count($users))
+                    @foreach ($users as $user)
+                        <li><a href="{!! route('users.chat', ['id' => $user->id]) !!}">{!! $user->name !!}</a></li>
+                    @endforeach
+                    @endif
+                </ul>
             </div>
         </div>
     </div>

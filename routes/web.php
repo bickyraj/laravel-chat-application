@@ -18,3 +18,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('users/{id}/chat', 'MessageController@chat')->name('users.chat');
+Route::post('/send-message', 'MessageController@sendMessage')->name('users.message');
