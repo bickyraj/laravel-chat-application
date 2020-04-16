@@ -21,7 +21,7 @@
     - php artisan make:auth
     - php artisan migrate
 
-## Setup The Application
+## Application Setup
 
 - start redis server
 - run the following commands
