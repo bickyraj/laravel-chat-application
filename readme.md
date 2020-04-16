@@ -18,6 +18,7 @@
 - run the following commands
     - composer install
     - npm install
+    - php artisan make:auth
     - php artisan migrate
 
 ## Setup The Application
